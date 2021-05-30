@@ -209,7 +209,7 @@ nav img{
     background: linear-gradient(135deg, var(--first), var(--second), var(--third));
     color: #fff;
     text-align: center;
-    padding: 150px;
+    padding: 150px; 
 }
 .contact h1{
     font-family: 'Playfair Display', serif;
@@ -230,8 +230,9 @@ nav img{
 .input-row input-group{
     flex-basis: 45%
 }   
-input{
-    font-size: 14;
+.name{
+    font-size: 16;
+    font-weight: 1000;
     width: 500px;
     border: none;
     outline: none;
@@ -240,34 +241,84 @@ input{
     padding: 10px;
     height: 45px;
     background: transparent;
-    margin-top: 20px;
+    margin top: 20px;
     color: #9f9da1;
+    font-family: 'Roboto Mono', monospace;
+}
+.gender{
+    font-size: 16;
+    font-weight: 600;
+    width: 500px;
+    border: none;
+    outline: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #9f9da1;
+    padding: 10px;
+    height: 45px;
+    background: transparent;
+    margin top: 20px;
+    color: #9f9da1;
+    font-family: 'Roboto Mono', monospace;
+}
+.phone{
+    font-size: 16;
+    font-weight: 1000;
+    width: 500px;
+    border: none;
+    outline: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #9f9da1;
+    padding: 10px;
+    height: 45px;
+    background: transparent;
+    margin top: 20px;
+    color: #9f9da1;
+    font-family: 'Roboto Mono', monospace;
+}
+.city{
+    font-size: 16;
+    font-weight: 1000;
+    width: 500px;
+    border: none;
+    outline: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #9f9da1;
+    padding: 10px;
+    height: 45px;
+    background: transparent;
+    margin top: 20px;
+    color: #9f9da1;
+    font-family: 'Roboto Mono', monospace;
 }
 .e-mail{
+    font-size: 16;
+    font-weight: 1000;
     width: 1025px;
-} 
-select{
-    font-size: 14;
-    width: 500px;
     border: none;
     outline: none;
     padding-bottom: 5px;
     border-bottom: 1px solid #9f9da1;
+    padding: 10px;
     height: 45px;
     background: transparent;
-    margin-top: 20px;
+    margin top: 20px;
     color: #9f9da1;
-    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
 }
-textarea{
+.message{
+    font-size: 16;
+    font-weight: 1000;
     width: 1025px;
     border: none;
-    border-bottom: 1px solid #9f9da1;
     outline: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #9f9da1;
     padding: 10px;
+    height: 45px;
     background: transparent;
-    margin-top: 20px;
+    margin top: 20px;
     color: #9f9da1;
+    font-family: 'Roboto Mono', monospace;
 }
 #contact-us{
     position: relative;
@@ -287,6 +338,7 @@ textarea{
 @media(max-width: 700px){
     .contact{
     padding: 70px;
+    height: 500px;
     }
     .contact h1{
     font-size: 20px;
@@ -299,46 +351,87 @@ textarea{
     font-size: 10;
     }
     .input-row{
-    margin: 0;
-    flex-direction: column;
     }
    .input-row input-group{
     flex-basis: 45%
     }
-    input{
-    width: 100%;
-    margin-top: 0;
-    font-size: 12;
+    .name{
+    font-size: 11;
+    width: 130px;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding-bottom: 5px;
+    border-bottom: 0.5px solid #9f9da1;
+    padding: 5px;
+}
+    .gender{
+    font-size: 11;
+    width: 130px;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding-bottom: 5px;
+    border-bottom: 0.5px solid #9f9da1;
+    padding: 5px;
+    }
+    .phone{
+    font-size: 11;
+    width: 130px;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding-bottom: 5px;
+    border-bottom: 0.5px solid #9f9da1;
+    padding: 5px;
+    }
+    .city{
+    font-size: 11;
+    width: 130px;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding-bottom: 5px;
+    border-bottom: 0.5px solid #9f9da1;
+    padding: 5px;
     }
     .e-mail{
-    width: 215px;
-    } 
-    select{
-        height: 
-    width: 100%;
-    margin-top: 0;
-    font-size: 12;
-    }
-    textarea{
-    width: 1025px;
+    font-size: 11;
+    width: 265px;
+    height: 30px;
     border: none;
-    border-bottom: 1px solid #9f9da1;
     outline: none;
-    padding: 10px;
-    background: transparent;
-    margin-top: 20px;
-    color: #9f9da1;
+    padding-bottom: 5px;
+    border-bottom: 0.5px solid #9f9da1;
+    padding: 5px;
+    }
+    .message{
+    font-size: 11;
+    height: 60px;
+    width: 265px;
+    border: none;
+    outline: none;
+    padding-bottom: 5px;
+    border-bottom: 0.5px solid #9f9da1;
+    padding: 5px;
+}
+    #contact-us{
+    position: relative;
+    left: 90px;
+    margin-top: 40px;
+    padding: 5px;
+    font-size: 12px;
 }
 }
 /*-------------------- About Us --------------------*/
 
 .about-us{
-    position: relative;
-    top: 35px;
     text-align: center;
     background-color: none;
-    padding: 50px;
-    margin: 0;
+    margin: 0px;
+    padding-top: 30px;
+    padding-left: 75px;
+    padding-right: 75px;
 }
 .row-about-us{
     margin-top: 5%;
@@ -347,6 +440,7 @@ textarea{
 }
 .row-about-us-left{
     padding-top: 20px;
+    margin-right: 10px;
 }
 .row-about-us-left img{
     height: 396px;
@@ -355,10 +449,14 @@ textarea{
 .row-about-us-right{
     margin-top: 35px;
     margin-bottom: 15px;
-    margin-left: 20px;
+    margin-left: 10px;
     border-style: solid;
     border-color: #000;
 }
+.favion{
+    width: 150px;
+    height: 150px;
+    }
 .row-about-us-right h1{
     font-family: 'Playfair Display', serif;
     padding-bottom: 5px;
@@ -377,46 +475,48 @@ textarea{
 @media(max-width: 700px){
     .about-us{
     top: 15px;
-    padding: 20px;
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.row-about-us-left{
+    padding-top: 2px;
+    margin-right: 2.5px;
     }
-    .row-about-us{
-    margin-top: 8%;
-    }
-    .row-about-us-left{
-    padding-top: 5px;
-    }
-    .row-about-us-left img{
-    height: 99px;
-    width: 154px;
+.row-about-us-left img{
+    margin-top: 20px;
+    height: 107px;
+    width: 166px;
     }
     .row-about-us-right{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    border: 0.5px solid #000;
+    margin-top: 12px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    border: 0.4px solid #000;
     }
-    .row-about-us-right img{
-    display: none;
+    .favion{
+    width: 47px;
+    height: 47px;
     }
     .row-about-us-right h1{
     font-size: 10;
-    padding-bottom: 1px;
+    padding-bottom: 0px;
     }
     .row-about-us-right p{
-    padding-bottom: 1px;
-    font-size: 5;
+    padding: 2px;
+    padding-bottom: 0px;
+    font-size: 6;
     }
     #hero-button{
-    padding: 1px;
     position: relative;
     border: 0.3px solid #000;
-    top: -2px;
+    top: -3px;
     width: 50px;
     height: 20px;
     margin-top: 1px;
-    background-color: #fff;
     font-size: 5;
     }
+
 }
 /*------------------ Our Gallery ------------------*/
 
@@ -438,15 +538,14 @@ textarea{
     margin: 0;
     padding: 0;
 }
-.row slider img{
-    width: 110%
+.slider-img{
+    width: 110%;
 }
 .pp2{
     position: absolute;
-    top: 3450px;
+    top: 3310px;
     left: 35px;
     padding: 10;
-    margin: 0;
     border: none;
     border-radius: 50%;
     width: 50px;
@@ -456,7 +555,7 @@ textarea{
 }
 .nn2{
     position: absolute;
-    top: 3450px;
+    top: 3310px;
     left: 1265px;
     padding: 10;
     border: none;
@@ -474,12 +573,15 @@ textarea{
 }
 @media(max-width: 700px){
    .our-gallery{
-    margin-top: 5px;
+    margin-top: 60px;
     padding: 5px;
 }
     .our-gallery h1{
     padding-bottom: 2px;
     font-size: 20px;
+}
+    .slider-img{
+    width: 130%;
 }
     .our-gallery p{
     font-size: 12px;
@@ -487,11 +589,30 @@ textarea{
     .row slider img{
     width: 50%;
 }
+    .pp2{
+    position: absolute;
+    top: 2645px;
+    left: 15px;
+    padding: 5;
+    width: 37px;
+    height: 37px;
+    font-size: 12;
+}
+    .nn2{
+    position: absolute;
+    top: 2645px;
+    left: 360px;
+    padding: 5;
+    width: 37px;
+    height: 37px;
+    font-size: 12;
+}
+
 }
 /*---------------------- Footer ----------------*/
 .footer{
     position: absolute;
-    top: 3560;
+    top: 3390px;
     width: 100%;
     background: linear-gradient(135deg, var(--first), var(--second), var(--third));
     height: 350px;
@@ -531,16 +652,20 @@ textarea{
 .row-footer-right-col{
     padding-left: 120px;
 }
-.phone img{
+.phone-col{
+    position: relative;
+    top: 15px;
+    left: -35px;
+}
+.location-col{
     position: relative;
     top: 20px;
     left: -35px;
 }
-.phone p{
+.row-footer-right-col p{
     position: relative;
-    top: -10px;
+    top: -20px;
     left: 0px;
-    font-size: 14px;
 }
 .location img{
     position: relative;
@@ -552,28 +677,91 @@ textarea{
     top: -30px;
     font-size: 14px;
 }
+@media(max-width: 700px){
+    .footer{
+    top: 2685px;
+    width: 100%;
+    height: 140px;
+    }
+    .row-footer{
+    padding-top: 8px;
+    padding-left: 6px;
+    padding-right: 6px;   
+    }
+    .row-footer h1{
+    font-size: 10px;
+    padding-bottom: 1px;
+    }
+    .row-footer p{
+    font-size: 8;    
+    }
+    .row-footer a{
+    font-size: 8;
+    }
+    .row-footer-left-col{
+    padding-right: 30px;
+    }
+    .row-footer-right-col{
+    padding-left: 30px;
+    }
+    .phone-col{
+    display: none;
+    }
+    .location-col{
+    display: none;
+    }
+    .row-footer-right-col p{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-size: 8;
+}
+}
 /*---------------- Copyrights ---------------*/
-
-.hero{
+.copyright{
     background-color: #000;
     height: 100px;
     width: 100%;
     color: #777;
     position: absolute;
-    top: 3840px;
+    top: 3740px;
 }
-.row-hero{
+.row-copyright{
     display: flex;
     padding-top: 40px;
     padding-bottom: 20px;
     padding-left: 100px;
     padding-right: 100px;
 }
-.row-hero-col img{
+.row-copyright-col img{
     padding: 5px;
     background-color: #000;
     height: 36px;
     width: 36px;
     position: relative;
     left: 455px;
+}
+@media(max-width: 700px){
+    .copyright{
+    position: absolute;
+    top: 2795px;
+    height: 40px;
+    width: 100%;  
+    }
+    .row-copyright{
+    padding: 10px;
+    }
+    .row-copyright-col p{
+    font-size: 8;
+    padding: 5px;
+    }
+    .row-copyright-col img{
+    padding: 5px;
+    background-color: #000;
+    object-fit: contain;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    left: 45px;
+    }
 }
