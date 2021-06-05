@@ -8,20 +8,20 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+.logo-name{
+    font-size: 34;
+    font-weight: 600;
+     padding-left: 60px;
+}
 nav{
-    background: linear-gradient(135deg, var(--first), var(--second), var(--third));
+    background-color: lightslategrey;
     display: flex;
-    padding: 2% 6%;
+    padding-top: 15px;
+    padding-left: 50px;
     justify-content: space-between;
     align-items: center;
-}
-nav img{
-    padding: 0;
-    position: absolute;
-    top: 15px;
-    left: 1140px;
-    width: 100px;
-    height: 80px;
+    height: 70px;
+    widows: 100%;
 }
 .nav-links{
     flex: 1;
@@ -53,10 +53,11 @@ nav img{
 .welcome{
     background-color: #adadad;
     height: 300px;
+    margin-bottom: 100px;
 }
 .welcome h1{
-    font-family: 'Dancing Script', cursive;
-    font-size: 115;
+    font-family: 'Playfair Display', serif;
+    font-size: 75;
     text-align: end;
     position: relative;
     top: 25%;  
@@ -64,12 +65,12 @@ nav img{
     padding-top: 20px;
 }
 .welcome p{
-    font-family: 'Limelight', cursive;
+    font-family: 'Playfair Display', serif;
+    color: #bf5600;
     font-size: 47;
     text-align: end;
     position: relative;
     top: 10%;
-    color: #fff;
     padding: 20px;
 }
 .row{
@@ -81,7 +82,26 @@ nav img{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 50px; 
+}
+.text-box h1 {
+    font-weight: 300;
+    color: #db5502;
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+}
+.text-box h1:before{
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 1px;
+    bottom: 0;
+    left: 16%;
+    border-bottom: 1px solid #db5502;
+}
+.text-box p{
+    margin-top: 30px;
 }
 .text-box-col{
     flex-basis: 32%;
@@ -116,10 +136,15 @@ nav img{
     font-size: 20;
 }
 @media(max-width: 700px){
+    .logo-name{
+    font-size: 14;
+     padding-left: 20px;
+}
     nav{
     background: linear-gradient(135deg, var(--first), var(--second), var(--third));
     display: flex;
     padding: 1% 4%;
+    widows: 100%;
     justify-content: space-between;
     align-items: left;
 }
@@ -147,16 +172,20 @@ nav img{
     height: 150px;
     }
     .welcome h1{
-    font-size: 58;
+    font-size: 38;
     position: relative;
     top: 25%;  
     padding-top: 20px;
 }
+    .text-box{
+    padding-top: 0px; 
+    }
     .welcome p{
     font-size: 24;
     padding: 5px;
 }
     .row{
+     margin-top: 5px;
     flex-direction: column;
     }
     .text-box h1{
@@ -165,17 +194,15 @@ nav img{
     .text-box p{
     font-size: 12;
     }
-    .text-box img{
-    width: 198px;
-    height: 219px;
-    position: relative;
-    left: 65px;
+    .text-box-col{
+    padding-left: 40px;
+    padding-right: 40px;
     }
-    .text-box-col h1{
-    font-size: 16;
+    .text-box-col h2{
+    font-size: 18;
     }
     .text-box-col p{
-    font-size: 10;
+    font-size: 12;
     padding-left: 25px;
     padding-right: 25px;
     }
@@ -217,9 +244,9 @@ nav img{
     padding-bottom: 20px;
 }
 .contact p{
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 40px;
     color: #777;
 }
 .input-row{
@@ -314,7 +341,6 @@ nav img{
     padding-bottom: 5px;
     border-bottom: 1px solid #9f9da1;
     padding: 10px;
-    height: 45px;
     background: transparent;
     margin top: 20px;
     color: #9f9da1;
@@ -337,7 +363,7 @@ nav img{
 }
 @media(max-width: 700px){
     .contact{
-    padding: 70px;
+    padding: 40px;
     height: 500px;
     }
     .contact h1{
@@ -357,7 +383,7 @@ nav img{
     }
     .name{
     font-size: 11;
-    width: 130px;
+    width: 95%;
     height: 30px;
     border: none;
     outline: none;
@@ -367,7 +393,7 @@ nav img{
 }
     .gender{
     font-size: 11;
-    width: 130px;
+    width: 95%;
     height: 30px;
     border: none;
     outline: none;
@@ -377,7 +403,7 @@ nav img{
     }
     .phone{
     font-size: 11;
-    width: 130px;
+    width: 95%;
     height: 30px;
     border: none;
     outline: none;
@@ -387,7 +413,7 @@ nav img{
     }
     .city{
     font-size: 11;
-    width: 130px;
+    width: 95%;
     height: 30px;
     border: none;
     outline: none;
@@ -397,7 +423,7 @@ nav img{
     }
     .e-mail{
     font-size: 11;
-    width: 265px;
+    width: 97%;
     height: 30px;
     border: none;
     outline: none;
@@ -408,7 +434,7 @@ nav img{
     .message{
     font-size: 11;
     height: 60px;
-    width: 265px;
+    width: 97%;
     border: none;
     outline: none;
     padding-bottom: 5px;
@@ -417,7 +443,7 @@ nav img{
 }
     #contact-us{
     position: relative;
-    left: 90px;
+    left: 210px;
     margin-top: 40px;
     padding: 5px;
     font-size: 12px;
@@ -476,17 +502,17 @@ nav img{
     .about-us{
     top: 15px;
     padding-top: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 45px;
+    padding-right: 45px;
 }
-.row-about-us-left{
+    .row-about-us-left{
     padding-top: 2px;
     margin-right: 2.5px;
     }
-.row-about-us-left img{
-    margin-top: 20px;
-    height: 107px;
-    width: 166px;
+    .row-about-us-left img{
+    margin-top: 0px;
+    max-width: 246.8px;
+    max-height: 158px;
     }
     .row-about-us-right{
     margin-top: 12px;
@@ -516,7 +542,6 @@ nav img{
     margin-top: 1px;
     font-size: 5;
     }
-
 }
 /*------------------ Our Gallery ------------------*/
 
@@ -543,7 +568,7 @@ nav img{
 }
 .pp2{
     position: absolute;
-    top: 3310px;
+    top: 3560px;
     left: 35px;
     padding: 10;
     border: none;
@@ -555,7 +580,7 @@ nav img{
 }
 .nn2{
     position: absolute;
-    top: 3310px;
+    top: 3560px;
     left: 1265px;
     padding: 10;
     border: none;
@@ -573,46 +598,14 @@ nav img{
 }
 @media(max-width: 700px){
    .our-gallery{
-    margin-top: 60px;
-    padding: 5px;
-}
-    .our-gallery h1{
-    padding-bottom: 2px;
-    font-size: 20px;
-}
-    .slider-img{
-    width: 130%;
-}
-    .our-gallery p{
-    font-size: 12px;
-}
-    .row slider img{
-    width: 50%;
-}
-    .pp2{
-    position: absolute;
-    top: 2645px;
-    left: 15px;
-    padding: 5;
-    width: 37px;
-    height: 37px;
-    font-size: 12;
-}
-    .nn2{
-    position: absolute;
-    top: 2645px;
-    left: 360px;
-    padding: 5;
-    width: 37px;
-    height: 37px;
-    font-size: 12;
+   display: none;
 }
 
 }
 /*---------------------- Footer ----------------*/
 .footer{
     position: absolute;
-    top: 3390px;
+    top: 3620px;
     width: 100%;
     background: linear-gradient(135deg, var(--first), var(--second), var(--third));
     height: 350px;
@@ -679,7 +672,8 @@ nav img{
 }
 @media(max-width: 700px){
     .footer{
-    top: 2685px;
+    position: relative;
+    top: 10px;
     width: 100%;
     height: 140px;
     }
@@ -724,7 +718,7 @@ nav img{
     width: 100%;
     color: #777;
     position: absolute;
-    top: 3740px;
+    top: 3970px;
 }
 .row-copyright{
     display: flex;
@@ -740,11 +734,12 @@ nav img{
     width: 36px;
     position: relative;
     left: 455px;
+    border: 2px solid #fff
 }
 @media(max-width: 700px){
     .copyright{
-    position: absolute;
-    top: 2795px;
+    position: relative;
+    top: 0px;
     height: 40px;
     width: 100%;  
     }
@@ -763,5 +758,6 @@ nav img{
     width: 16px;
     position: relative;
     left: 45px;
+    border: 1px solid #fff
     }
 }
